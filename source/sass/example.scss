@@ -1,0 +1,30 @@
+.example {
+  background-color: #eaeaea;
+
+  .title {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+  }
+
+  .coast {
+
+    .result {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    .description {
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+
+  .expenses {
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
