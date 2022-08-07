@@ -1,0 +1,58 @@
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.button {
+  box-sizing: border-box;
+  width: 280px;
+  margin: 0;
+  padding: 8px 44px;
+  border: none;
+  background-color: #68b738;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.button--show-all {
+  background-color: #f2f2f2;
+  color: #444444;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special-dark-gray;
+}
+
+label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.label--input {
+  color: $special-dark-gray;
+}
+
+.label--radio {
+  color: $special-dark-gray-2;
+}
+
+.label-checkbox {
+  color: $black;
+}
