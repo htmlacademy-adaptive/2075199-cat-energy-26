@@ -1,0 +1,17 @@
+.additional-card {
+  .title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .details {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: $special-dark-gray;
+  }
+}

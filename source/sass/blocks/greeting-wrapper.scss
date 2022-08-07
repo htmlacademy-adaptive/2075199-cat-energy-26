@@ -1,0 +1,13 @@
+.greeting-wrapper {
+  background-color: $basic-green;
+  background-image: url("../img/bg-cover.png"), url("../img/bg-cat-greeting.jpg");
+  background-repeat: repeat, no-repeat;
+
+  .main-title {
+    color: $white;
+  }
+
+  .main-description {
+    color: $white;
+  }
+}

@@ -1,0 +1,11 @@
+.feature-item {
+  background-color: $basic-gray;
+
+  .title {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
