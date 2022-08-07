@@ -1,0 +1,264 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/oswaldregular.woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/oswaldmedium.woff2");
+  font-display: swap;
+}
+.body {
+  width: 320px;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ffffff;
+}
+
+.body__header {
+  margin: 0;
+  padding: 10px 20px 18px 20px;
+}
+
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.button {
+  box-sizing: border-box;
+  width: 280px;
+  margin: 0;
+  padding: 8px 44px;
+  border: none;
+  background-color: #68b738;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.button--show-all {
+  background-color: #f2f2f2;
+  color: #444444;
+}
+
+.description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.main-conteiner {
+  margin: 0 auto;
+}
+.main-conteiner .main-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.main-conteiner .main-description {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.main-conteiner .main-conteiner__wrapper {
+  padding: 0 20px;
+}
+
+.greeting-wrapper {
+  background-color: #68b738;
+  background-image: url("../img/bg-cover.png"), url("../img/bg-cat-greeting.jpg");
+  background-repeat: repeat, no-repeat;
+}
+.greeting-wrapper .main-title {
+  color: #ffffff;
+}
+.greeting-wrapper .main-description {
+  color: #ffffff;
+}
+
+.feature-item {
+  background-color: #f2f2f2;
+}
+.feature-item .title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.about-work .title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.example {
+  background-color: #eaeaea;
+}
+.example .title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.example .coast .result {
+  font-size: 24px;
+  line-height: 24px;
+}
+.example .coast .description {
+  font-size: 12px;
+  line-height: 12px;
+}
+.example .expenses {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.invite .title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.invite .description {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.product-card {
+  margin: 0;
+  padding: 20px 0;
+}
+.product-card .title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.product-card .image {
+  display: block;
+}
+.product-card .details {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.additional-goods .group-title {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional-goods__gift {
+  padding: 56px 60px;
+  text-align: center;
+}
+
+.additional-card .title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.additional-card .details {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.gift {
+  background-color: #68b738;
+  background-image: url("../img/bg-cover.png"), url("../img/bg-cat-gift.jpg");
+  background-repeat: repeat, no-repeat;
+}
+.gift .description {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.fieldset {
+  border: none;
+}
+.fieldset .title {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.label--input {
+  color: #444444;
+}
+
+.label--radio {
+  color: #222222;
+}
+
+.label-checkbox {
+  color: #000000;
+}
+
+.main-footer {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 40px 20px 30px 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
