@@ -1,19 +1,22 @@
-// Начните писать стили здесь
 @import "./utils/fonts.scss";
-@import "./utils/color.scss";
+@import "./utils/variabels.scss";
 @import "./utils/global.scss";
 @import "./blocks/body.scss";
 @import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
 @import "./blocks/main-conteiner.scss";
 @import "./blocks/greeting-wrapper.scss";
+@import "./blocks/programmes.scss";
 @import "./blocks/feature-item.scss";
 @import "./blocks/about-work.scss";
 @import "./blocks/example.scss";
 @import "./blocks/invite.scss";
+@import "./blocks/catalog-product";
 @import "./blocks/product-card.scss";
 @import "./blocks/additional-goods.scss";
 @import "./blocks/additional-card.scss";
 @import "./blocks/gift.scss";
+@import "./blocks/form.scss";
 @import "./blocks/fieldset.scss";
 @import "./blocks/main-footer.scss";
-@import "visually-hidden";
+@import "./utils/visually-hidden.scss";

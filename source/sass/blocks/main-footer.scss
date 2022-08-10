@@ -1,5 +1,22 @@
 .main-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
   background-color: $basic-gray;
   margin: 0;
   padding: 40px 20px 30px 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.main-footer__social-list {
+  display: flex;
+}
+
+.main-footer__developer {
+  display: flex;
 }
