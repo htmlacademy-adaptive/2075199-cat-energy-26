@@ -1,4 +1,8 @@
 .additional-goods {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+
   .group-title {
     font-size: 24px;
     line-height: 24px;

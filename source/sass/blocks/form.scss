@@ -1,0 +1,49 @@
+.form {
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form__parameters {
+  grid-column: 1/2;
+}
+
+.form__progrmmes-type {
+  grid-column: 2/-1;
+}
+
+.form__owner-contacts {
+  grid-column: 1/-1;
+}
+
+.form__comment {
+  grid-column: 1/-1;
+}
+
+.form__additionally {
+  grid-column: 1/-1;
+
+  .list {
+    display: grid;
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px 124px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+.form__button {
+  grid-column: 1/2;
+}
+
+.form__legend {
+  grid-column: 2/-1;
+}

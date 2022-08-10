@@ -1,0 +1,19 @@
+.programmes {
+  display: flex;
+  flex-direction: column;
+}
+
+.programmes__features-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+}

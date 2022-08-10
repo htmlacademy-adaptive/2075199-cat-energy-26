@@ -1,4 +1,18 @@
 .additional-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 244px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 38px;
+  }
+
   .title {
     font-size: 16px;
     line-height: 20px;
@@ -13,5 +27,11 @@
     font-size: 12px;
     line-height: 16px;
     color: $special-dark-gray;
+  }
+}
+
+.additional-card__button {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    grid-column: 1/-1;
   }
 }

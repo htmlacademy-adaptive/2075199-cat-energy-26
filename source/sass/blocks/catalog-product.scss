@@ -1,0 +1,14 @@
+.catalog-product__list {
+  display: grid;
+  gap: 44px;
+
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+  }
+}

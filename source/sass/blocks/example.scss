@@ -1,10 +1,28 @@
 .example {
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: $special-gray;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   .title {
     font-size: 36px;
     line-height: 40px;
     font-weight: 400;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1/-1;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1/2;
+    }
   }
 
   .coast {
@@ -25,5 +43,53 @@
     line-height: 20px;
     font-weight: 400;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 2/-1;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1/2;
+    }
+  }
+}
+
+.example__description {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
+}
+
+.example__coast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
+}
+
+.example__chages-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.example__cat-images {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/-1;
   }
 }
