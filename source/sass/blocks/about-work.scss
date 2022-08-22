@@ -11,24 +11,46 @@
   grid-template-columns: 1fr;
   gap: 20px;
 
-  .pin {
-    width: 60px;
-    height: 60px;
-    background-color: $basic-green;
-  }
-
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 36px 154px;
-
-    .pin {
-      width: 80px;
-      height: 80px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 36px 96px;
   }
+}
+
+.about-work__item {
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    width: 230px;
+  }
+}
+
+.about-work__pin {
+  width: 60px;
+  height: 60px;
+  background-color: $basic-green;
+  flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.about-work__pin-image {
+  @media (min-width: $tablet-width) {
+    margin: 11px;
+  }
+}
+
+.about-work__description {
+  margin: 0;
+  vertical-align: middle;
 }

@@ -2,29 +2,50 @@
   display: grid;
   gap: 20px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .form__parameters {
-  grid-column: 1/2;
+  border: none;
+  grid-column: 1/-1;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
 }
 
-.form__progrmmes-type {
-  grid-column: 2/-1;
+.form__programmes-type {
+  border: none;
+  grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 88px;
+    border: 1px solid $border-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/-1;
+  }
 }
 
 .form__owner-contacts {
   grid-column: 1/-1;
+  border: none;
+  border-top: 1px solid $basic-green;
 }
 
 .form__comment {
   grid-column: 1/-1;
+  border: none;
+  border-top: 1px solid $basic-green;
 }
 
 .form__additionally {
   grid-column: 1/-1;
+  border: none;
+  border-top: 1px solid $basic-green;
 
   .list {
     display: grid;
@@ -41,9 +62,26 @@
 }
 
 .form__button {
-  grid-column: 1/2;
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    min-width: 282px;
+  }
 }
 
 .form__legend {
   grid-column: 2/-1;
+}
+
+.form__input-set {
+  display: flex;
+  gap: 12px;
+
+  input {
+    flex-grow: 1;
+  }
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 150px;
 }

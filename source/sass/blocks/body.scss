@@ -1,5 +1,7 @@
 .body {
-  margin: 0;
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -9,4 +11,12 @@
 .body__header {
   margin: 0;
   padding: 10px 20px 18px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 110px;
+  }
 }
