@@ -2,6 +2,8 @@
   background-color: $basic-green;
   background-image: url("../img/bg-cover.png"), url("../img/bg-cat-gift.jpg");
   background-repeat: repeat, no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: flex;

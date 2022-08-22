@@ -6,6 +6,12 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 0 244px;
+    padding: 28px 38px;
+    border: 1px solid $border-gray;
+
+    &:not(:first-child) {
+      border-top: none;
+    }
   }
 
   @media (min-width: $desktop-width) {

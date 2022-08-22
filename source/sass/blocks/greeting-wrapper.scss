@@ -2,12 +2,41 @@
   background-color: $basic-green;
   background-image: url("../img/bg-cover.png"), url("../img/bg-cat-greeting.jpg");
   background-repeat: repeat, no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 26px 34px 164px 34px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -70px;
+    height: 500px;
+    background-image: url('../img/bg-cover.png'),url('../img/bg-cat-greeting-desktop.jpg');
+    background-repeat: repeat-y, no-repeat;
+    background-position: right;
+  }
 
   .main-title {
     color: $white;
+
+    @media (min-width: $tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+      color: $black;
+    }
   }
 
   .main-description {
     color: $white;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      color: $black;
+    }
   }
 }
