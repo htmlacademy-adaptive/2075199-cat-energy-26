@@ -54,7 +54,7 @@
 
 .main-nav--close .main-nav__list {
   @media (max-width: $mobile-width-only) {
-  display: none;
+    display: none;
   }
 }
 
@@ -89,6 +89,6 @@
 
 .main-nav__link-index {
   @media (min-width: $desktop-width) {
-    color: $white
+    color: $white;
   }
 }

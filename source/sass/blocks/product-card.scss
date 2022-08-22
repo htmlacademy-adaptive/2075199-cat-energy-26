@@ -1,9 +1,7 @@
 .product-card {
   display: grid;
   grid-template-columns: 84px 1fr;
-  grid-template-areas:  "image title"
-                        "image details"
-                        "button button";
+  grid-template-areas: "image title" "image details" "button button";
   gap: 14px 36px;
   margin: 0;
   padding: 20px 0;

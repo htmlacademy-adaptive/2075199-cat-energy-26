@@ -15,7 +15,7 @@
   @media (min-width: $desktop-width) {
     margin-top: -70px;
     height: 500px;
-    background-image: url('../img/bg-cover.png'),url('../img/bg-cat-greeting-desktop.jpg');
+    background-image: url("../img/bg-cover.png"), url("../img/bg-cat-greeting-desktop.jpg");
     background-repeat: repeat-y, no-repeat;
     background-position: right;
   }

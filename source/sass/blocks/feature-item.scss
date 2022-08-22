@@ -1,18 +1,14 @@
 .feature-item {
   display: grid;
   grid-template-columns: 50px 1fr;
-  grid-template-areas:  "image title"
-                        "description description"
-                        "link link";
+  grid-template-areas: "image title" "description description" "link link";
   gap: 20px;
   background-color: $basic-gray;
   padding: 30px 20px 22px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     grid-template-columns: 1fr 200px;
-    grid-template-areas:  "title image"
-                          "description image"
-                          "link image";
+    grid-template-areas: "title image" "description image" "link image";
   }
 }
 
@@ -37,10 +33,11 @@
   grid-area: description;
   border-bottom: 1px solid $border-gray;
 
-  @media (min-width: $tablet-width)  {
+  @media (min-width: $tablet-width) {
     border: none;
   }
 }
+
 .feature-item__link {
   grid-area: link;
 }
