@@ -27,11 +27,37 @@
   grid-area: image;
 }
 
+.feature-item__image--slim {
+  @media (min-width: $tablet-width) {
+    min-width: 200px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 100px;
+    height: auto;
+  }
+}
+
+.feature-item__image--pro {
+  @media (min-width: $tablet-width) {
+    min-width: 268px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 134px;
+    height: auto;
+  }
+}
+
+
 .feature-item__description {
   margin: 0;
   padding-bottom: 20px;
   grid-area: description;
   border-bottom: 1px solid $border-gray;
+  text-align: start;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -40,4 +66,5 @@
 
 .feature-item__link {
   grid-area: link;
+  text-align: start;
 }
