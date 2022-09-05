@@ -14,6 +14,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 36px 154px;
+    counter-reset: section;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,6 +30,14 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
     width: 230px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      counter-increment: secrion;
+      content: counters(section) "";
+      color: $basic-gray;
+    }
   }
 }
 

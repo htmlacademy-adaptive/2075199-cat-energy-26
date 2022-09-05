@@ -4,3 +4,21 @@
   flex-wrap: wrap;
   text-align: center;
 }
+
+.main-header__logo-cat {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-title {
+  @media (min-width: $tablet-width) {
+    min-width: 174px;
+    min-height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 202px;
+    min-height: 60px;
+  }
+}

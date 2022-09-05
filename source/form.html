@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="./img/favicon/icon .svg" type="image/svg+xml">
+    <link rel="apple-toch-icon" href="./img/favicon/apple-icon.png">
+    <link rel="manifest" href="/manifest.webmanifest">
   </head>
   <body class="page__body body">
     <header class="body__header main-header">
       <a class="main-header__logo link" href="index.html">
-        <img class="main-header__logo-cat" src="img/logo-mobile.svg" width="34" height="38" alt="Энергичный кот.">
-        <img class="main-header__logo-title logo-title" src="img/logo-title-mobile.svg" width="100" height="18" alt="Кэт энерджи.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logotypes/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotypes/logo-tablet.svg">
+          <img class="main-header__logo-cat" src="img/logotypes/logo-mobile.svg" width="34" height="38" alt="Энергичный кот.">
+          <img class="main-header__logo-title logo-title" src="img/logotypes/logo-title-mobile.svg" width="100" height="18" alt="Кэт энерджи.">
+        </picture>
       </a>
       <nav class="main-header__main-nav main-nav main-nav--close">
         <button class="main-nav__toggle nav-toggle" type="button">
@@ -18,13 +26,13 @@
         </button>
         <ul class="main-nav__list list">
           <li class="main-nav__item">
-            <a class="main-nav__link link" href="index.html">главная</a>
+            <a class="main-nav__link-index link" href="index.html">главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link" href="catalog.html">каталог продукции</a>
+            <a class="main-nav__link-index link" href="catalog.html">каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link" href="form.html">подбор программы</a>
+            <a class="main-nav__link-index link" href="form.html">подбор программы</a>
           </li>
         </ul>
       </nav>

@@ -15,7 +15,7 @@
   }
 }
 
-.main-conteiner__wrapper {
+.wrapper {
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -24,13 +24,5 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
-  }
-}
-
-.main-conteiner__programmes {
-  margin-top: -150px;
-
-  @media (min-width: $desktop-width) {
-    margin-top: -480px;
   }
 }

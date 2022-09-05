@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="./img/favicon/icon .svg" type="image/svg+xml">
+    <link rel="apple-toch-icon" href="./img/favicon/apple-icon.png">
+    <link rel="manifest" href="/manifest.webmanifest">
   </head>
   <body class="page__body body">
     <header class="body__header main-header">
       <a class="main-header__logo link" href="index.html">
-        <img class="main-header__logo-cat" src="img/logo-mobile.svg" width="34" height="38" alt="Энергичный кот.">
-        <img class="main-header__logo-title logo-title" src="img/logo-title-mobile.svg" width="100" height="18" alt="Кэт энерджи.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logotypes/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotypes/logo-tablet.svg">
+          <img class="main-header__logo-cat" src="img/logotypes/logo-mobile.svg" width="34" height="38" alt="Энергичный кот.">
+          <img class="main-header__logo-title logo-title" src="img/logotypes/logo-title-mobile.svg" width="100" height="18" alt="Кэт энерджи.">
+        </picture>
       </a>
       <nav class="main-header__main-nav main-nav main-nav--close">
         <button class="main-nav__toggle nav-toggle" type="button">
@@ -30,30 +38,39 @@
       </nav>
     </header>
     <main class="body__main main-conteiner">
-      <div class="main-conteiner__greeting-wrapper greeting-wrapper">
-        <h1 class="greeting-wrapper__title main-title">Функциональное питание для котов</h1>
-        <p class="greeting-wrapper__description main-description">Занялся собой? Займись котом!</p>
-      </div>
-      <section class="main-conteiner__programmes main-conteiner__wrapper programmes">
-        <h2 class="programmes__title visually-hidden">Наши программы</h2>
-        <img class="programmes__image" src="img/programme-with-chicken.png" width="280" height="270" alt="cat energy pro с курицей.">
+      <h1 class="visually-hidden">Магазин функцианального питания для котов</h1>
+      <section class="main-conteiner__programmes  programmes">
+        <h2 class="programmes__title title">Функциональное питание для котов</h2>
+        <p class="programmes__description description">Занялся собой? Займись котом!</p>
+        <picture class="picture">
+          <source class="programmes__image" media="(min-width: 1440px)" srcset="img/programmes/index-can.png 1x, img/programmes/index-can@2x.png 2x">
+          <source class="programmes__image" media="(min-width: 768px)" srcset="img/programmes/index-can-tablet.png 1x, img/programmes/index-can-tablet@2x.png 2x">
+          <img class="programmes__image" src="img/programmes/index-can-mobile.png" srcset="img/programmes/index-can-mobile@2x.png 2x" width="280" height="270" alt="cat energy pro с курицей.">
+        </picture>
         <button class="programmes__button button" type="button">подобрать программу</button>
-        <ul class="programmes__features-list fetures-list list">
+        <ul class="programmes__features-list fetures-list list wrapper">
           <li class="fetures-list__item feature-item">
             <h3 class="feature-item__title title">похудение</h3>
-            <img class="feature-item__image" src="./img/slim-mobile.svg" width="50" height="53" alt="Элегантная кошка.">
+            <img class="feature-item__image feature-item__image--slim" src="./img/programmes/slim.svg" width="50" height="53" alt="Элегантная кошка.">
             <p class="feature-item__description description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="feature-item__link link" href="#">каталог slim</a>
+            <a class="feature-item__link link" href="#">
+              <span>каталог slim</span>
+              <img src="./img/programmes/arrow.svg" width="32" height="10" alt="">
+            </a>
+
           </li>
           <li class="fetures-list__item feature-item">
             <h3 class="feature-item__title title">Набор массы</h3>
-            <img class="feature-item__image" src="./img/pro-mobile.svg" width="67" height="50" alt="Мощная пантера.">
+            <img class="feature-item__image feature-item__image--pro" src="./img/programmes/pro.svg" width="67" height="50" alt="Мощная пантера.">
             <p class="feature-item__description description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="feature-item__link link" href="#">каталог pro</a>
+            <a class="feature-item__link link" href="#">
+              <span>каталог pro</span>
+              <img src="./img/programmes/arrow.svg" width="32" height="10" alt="">
+            </a>
           </li>
         </ul>
       </section>
-      <section class="main-conteiner__about-work main-conteiner__wrapper about-work">
+      <section class="main-conteiner__about-work wrapper about-work">
         <h2 class="about-work__title title">Как это работает</h2>
         <ol class="about-work__list list">
           <li class="about-work__item">
@@ -82,7 +99,7 @@
           </li>
         </ol>
       </section>
-      <section class="main-conteiner__example main-conteiner__wrapper example">
+      <section class="main-conteiner__example wrapper example">
         <h2 class="example__title title">Живой пример</h2>
         <p class="example__description description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
         <div class="example__coast">
