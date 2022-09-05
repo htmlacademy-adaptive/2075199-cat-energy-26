@@ -22,7 +22,9 @@
   }
 
   .picture {
-    order: 4;
+    @media (min-width: $tablet-width) {
+      order: 4;
+    }
   }
 }
 
