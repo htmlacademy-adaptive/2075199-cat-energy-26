@@ -9,7 +9,7 @@
     grid-template-columns: 366px 1fr;
     padding-top: 42px;
     padding-bottom: 86px;
-    background: linear-gradient($white 62%, $special-gray 62%)
+    background: linear-gradient($white 62%, $special-gray 62%);
   }
 
   @media (min-width: $desktop-width) {
@@ -160,7 +160,6 @@
     max-width: none;
     margin: 0;
     text-align: start;
-    justify-self: start;
     align-self: center;
   }
 }
