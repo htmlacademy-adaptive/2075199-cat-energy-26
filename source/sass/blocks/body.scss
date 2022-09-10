@@ -10,13 +10,15 @@
 
 .body__header {
   margin: 0;
-  padding: 10px 20px 18px 20px;
+  padding: 10px 20px 12px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px;
+    padding: 24px 30px;
+    padding-right: 16px;
+    padding-bottom: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 52px 102px 47px 110px;
   }
 }

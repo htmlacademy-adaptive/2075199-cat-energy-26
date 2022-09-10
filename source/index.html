@@ -17,8 +17,8 @@
           <source media="(min-width: 1440px)" srcset="img/logotypes/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotypes/logo-tablet.svg">
           <img class="main-header__logo-cat" src="img/logotypes/logo-mobile.svg" width="34" height="38" alt="Энергичный кот.">
-          <img class="main-header__logo-title logo-title" src="img/logotypes/logo-title-mobile.svg" width="100" height="18" alt="Кэт энерджи.">
         </picture>
+        <img class="main-header__logo-title logo-title" src="img/logotypes/logo-title-mobile.svg" width="100" height="18" alt="Кэт энерджи.">
       </a>
       <nav class="main-header__main-nav main-nav main-nav--close">
         <button class="main-nav__toggle nav-toggle" type="button">
@@ -26,13 +26,19 @@
         </button>
         <ul class="main-nav__list list">
           <li class="main-nav__item">
-            <a class="main-nav__link-index link" href="index.html">главная</a>
+            <a class="main-nav__link main-nav__link--index link" href="index.html">
+              <span class="main-nav__current-page  main-nav__current-page main-nav__current-page--index">главная</span>
+              </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link-index link" href="catalog.html">каталог продукции</a>
+            <a class="main-nav__link main-nav__link--index link" href="catalog.html">
+              <span>каталог продукции</span>
+            </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link-index link" href="form.html">подбор программы</a>
+            <a class="main-nav__link main-nav__link--index link" href="form.html">
+              <span>подбор программы</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -42,8 +48,11 @@
       <section class="main-conteiner__programmes  programmes">
         <h2 class="programmes__title title">Функциональное питание для котов</h2>
         <p class="programmes__description description">Занялся собой? Займись котом!</p>
-        <div class="picture">
+        <div class="programmes__picture">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/programmes/index-can.webp 1x, img/programmes/index-can@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/programmes/index-can-tablet.webp 1x, img/programmes/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/programmes/index-can.webp 1x, img/programmes/index-can@2x.webp 2x">
             <source class="programmes__image" media="(min-width: 1440px)" srcset="img/programmes/index-can.png 1x, img/programmes/index-can@2x.png 2x">
             <source class="programmes__image" media="(min-width: 768px)" srcset="img/programmes/index-can-tablet.png 1x, img/programmes/index-can-tablet@2x.png 2x">
             <img class="programmes__image" src="img/programmes/index-can-mobile.png" srcset="img/programmes/index-can-mobile@2x.png 2x" width="280" height="270" alt="cat energy pro с курицей.">
@@ -57,17 +66,17 @@
             <p class="feature-item__description description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="feature-item__link link" href="#">
               <span>каталог slim</span>
-              <img src="./img/programmes/arrow.svg" width="32" height="10" alt="">
+              <img class="feature-item__arrow" src="./img/programmes/arrow.svg" width="32" height="10" alt="">
             </a>
 
           </li>
-          <li class="fetures-list__item feature-item">
+          <li class="fetures-list__item feature-item feature-item--pro">
             <h3 class="feature-item__title title">Набор массы</h3>
             <img class="feature-item__image feature-item__image--pro" src="./img/programmes/pro.svg" width="67" height="50" alt="Мощная пантера.">
             <p class="feature-item__description description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="feature-item__link link" href="#">
               <span>каталог pro</span>
-              <img src="./img/programmes/arrow.svg" width="32" height="10" alt="">
+              <img class="feature-item__arrow" src="./img/programmes/arrow.svg" width="24" height="10" alt="">
             </a>
           </li>
         </ul>
@@ -97,37 +106,51 @@
             <div class="about-work__pin about-work__pin--watch">
               <img class="about-work__pin-image" src="./img/about-watch.svg" width="60" height="60" alt="">
             </div>
-            <p class="about-work__description description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="about-work__description description">Уже через месяц наслаждайтесь изменениями к лучшему <br class="about-work__line-break"> вашего питомца!</p>
           </li>
         </ol>
       </section>
       <section class="main-conteiner__example wrapper example">
         <h2 class="example__title title">Живой пример</h2>
         <p class="example__description description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <div class="example__coast">
-          <dl class="coast">
+        <div class="example__coasts">
+          <dl class="example__coast">
             <dt class="example__coast-factor description">снижение веса</dt>
             <dd class="example__coast-result result">5 КГ</dd>
           </dl>
-          <dl class="coast">
+          <dl class="example__coast">
             <dt class="example__coast-factor description">затрачено времени</dt>
             <dd class="example__coast-result result">60 ДНЕЙ</dd>
           </dl>
         </div>
-        <p class="example__expenses expenses">Затраты на питание: 15 000 РУБ. </p>
+        <p class="example__expenses">Затраты на питание: 15 000 РУБ. </p>
         <div class="example__slider slider">
           <div class="slider__image-container">
-            <img class="slider__image slider__image--before" src="./img/slider/viewport=mobile, state=before@1x.png" width="280" height="256" alt="Упитанный кот">
-            <img class="slider__image slider__image--after" src="./img/slider/viewport=mobile, state=after@1x.png" width="280" height="256" alt="Стройный кот">
+            <div class="">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/slider/slider-tablet-before@1x.webp 1x, ./img/slider/slider-tablet-before@2x.webp 2x">
+                <source type="image/webp" srcset="./img/slider/slider-mobile-before@1x.webp 1x, ./img/slider/slider-mobile-before@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="./img/slider/slider-tablet-before@1x.png 1x, ./img/slider/slider-tablet-before@2x.png 2x">
+                <img class="slider__image slider__image--before" src="./img/slider/slider-mobile-before@1x.png" srcset="./img/slider/slider-mobile-before@2x.png 2x" width="280" height="256" alt="Упитанный кот">
+              </picture>
+            </div>
+            <div class="">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/slider/slider-tablet-after@1x.webp 1x, ./img/slider/slider-tablet-after@2x.webp 2x">
+                <source type="image/webp" srcset="./img/slider/slider-mobile-after@1x.webp 1x, ./img/slider/slider-mobile-after@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="./img/slider/slider-tablet-after@1x.png 1x, ./img/slider/slider-tablet-after@2x.png 2x">
+                <img class="slider__image slider__image--after" src="./img/slider/slider-mobile-after@1x.png" srcset="./img/slider/slider-mobile-after@2x.png 2x" width="280" height="256" alt="Упитанный кот">
+              </picture>
+            </div>
           </div>
           <input class="slider__range" type="range" min="0" max="100" value="50">
           <div class="slider__line"></div>
-          <svg class="slider__button" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="38" height="38" rx="19" fill="#fff"/><path d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z" fill="#666"/><rect x="1" y="1" width="38" height="38" rx="19" stroke="#666" stroke-width="2"/></svg>
+          <svg class="slider__button" width="24" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z"/></svg>
         </div>
       </section>
       <section class="main-conteiner__invite invite">
         <div class="invite__wrapper">
-          <h2 class="invite__title title">приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="invite__title title">приглашаем<br> к сотрудничеству дилеров!</h2>
           <address class="invite__adress description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <iframe class="invite__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858716186894!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1661178924460!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title=""></iframe>
@@ -142,7 +165,7 @@
           </svg>
         </a>
         <ul class="main-footer__social-list social list">
-          <li class="social__item">
+          <li class="main-footer__social-item">
             <a class="social__link" href="#">
               <p class="visually-hidden">Мы в вконтакте</p>
               <svg class="social__icon" aria-hidden="true" focusable="false" width="27" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -150,7 +173,7 @@
               </svg>
             </a>
           </li>
-          <li class="social__item">
+          <li class="main-footer__social-item">
             <a class="social__link" href="#">
               <p class="visually-hidden">Мы в YouTube</p>
               <svg class="social__icon" aria-hidden="true" focusable="false" width="24" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -158,7 +181,7 @@
               </svg>
             </a>
           </li>
-          <li class="social__item">
+          <li class="main-footer__social-item">
             <a class="social__link" href="#">
               <p class="visually-hidden">Мы в Telegram</p>
               <svg class="social__icon" aria-hidden="true" focusable="false" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -168,8 +191,8 @@
           </li>
         </ul>
         <a class="main-footer__developer developer link" href="#">
-          <p class="developer__name">HTML Academy</p>
-          <svg class="developer__logo" aria-hidden="true" focusable="false" width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <p class="main-footer__developer-name">HTML Academy</p>
+          <svg class="main-footer__developer-logo" aria-hidden="true" focusable="false" width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" fill="#666"/>
           </svg>
         </a>

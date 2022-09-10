@@ -2,13 +2,34 @@
   display: grid;
   grid-template-columns: 50px 1fr;
   grid-template-areas: "image title" "description description" "link link";
-  gap: 20px;
+  gap: 10px 22px;
   background-color: $basic-gray;
-  padding: 30px 20px 22px;
+  padding: 20px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 200px;
     grid-template-areas: "title image" "description image" "link image";
+    gap: 15px 50px;
+    padding: 78px 64px 45px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 140px 1fr;
+    grid-template-areas: "image title" "description description" "link link";
+    gap: 24px 22px;
+    padding: 38px 50px 59px 50px;
+  }
+}
+
+.feature-item--pro {
+  padding-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 34px;
   }
 }
 
@@ -20,51 +41,107 @@
   font-weight: 400;
   text-transform: uppercase;
   grid-area: title;
-  vertical-align: middle;
+  justify-self: start;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 6px;
+    margin-left: 2px;
+  }
 }
 
 .feature-item__image {
   grid-area: image;
+  margin-left: 2px;
 }
 
 .feature-item__image--slim {
   @media (min-width: $tablet-width) {
     min-width: 200px;
     height: auto;
+    margin-top: 3px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 100px;
     height: auto;
+    padding-left: 1px;
   }
 }
 
 .feature-item__image--pro {
+  margin-left: -6px;
+
   @media (min-width: $tablet-width) {
     min-width: 268px;
     height: auto;
+    margin-top: 13px;
+    margin-left: -34px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 134px;
     height: auto;
+    margin-top: 13px;
+    margin-left: -17px;
   }
 }
 
 
 .feature-item__description {
   margin: 0;
-  padding-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 22px;
   grid-area: description;
   border-bottom: 1px solid $border-gray;
   text-align: start;
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 6px;
+    padding-left: 2px;
+    padding-bottom: 0;
   }
 }
 
 .feature-item__link {
   grid-area: link;
   text-align: start;
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 14px;
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 2px;
+    padding-left: 3px;
+  }
+}
+
+.feature-item__link:hover .feature-item__arrow,
+.feature-item__link:focus {
+  transform: translateX(10px);
+}
+
+.feature-item__link:active {
+  opacity: 0.3;
+}
+
+.feature-item__arrow {
+  margin: 2px;
+  margin-left: 13px;
 }

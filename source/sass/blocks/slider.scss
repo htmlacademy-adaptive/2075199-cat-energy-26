@@ -3,12 +3,22 @@
   position: relative;
   overflow: hidden;
   --position: 55%;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .slider__image-container {
   max-width: 280px;
   margin: 0 auto;
   aspect-ratio: 1/1;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+    height: 512px;
+  }
 }
 
 .slider__image {
@@ -23,6 +33,10 @@
   inset: 0;
   width: var(--position);
   background-color: $special-gray;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient($white 29%, $special-gray 29%);
+  }
 }
 
 
@@ -50,10 +64,37 @@
   pointer-events: none;
 }
 
+.slider:hover .slider__line,
+.slider:focus .slider__line {
+  background-color: $basic-green;
+}
+
+.slider:active .slider__line {
+  background-color: $basic_green-2;
+  opacity: 0.6;
+}
+
 .slider__button {
   position: absolute;
   top: 50%;
   left: var(--position);
   transform: translate(-50%, -50%);
   pointer-events: none;
+  fill: $special-gray-3;
+  background-color: $white;
+  padding: 8px 6px;
+  border-radius: 50%;
+  border: 2px solid $special-gray-3;
+}
+
+.slider:hover .slider__button,
+.slider:focus .slider__button {
+  fill: $basic-green;
+  border-color: $basic-green;
+}
+
+.slider:active .slider__button {
+  fill: $basic-green;
+  border-color: $basic-green;
+  opacity: 0.6;
 }

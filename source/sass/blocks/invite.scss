@@ -2,31 +2,56 @@
   @media (min-width: $desktop-width) {
     position: relative;
   }
-
-  .title {
-    font-family: "Oswald", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-
-  .description {
-    font-size: 14px;
-    line-height: 20px;
-  }
 }
 
 .invite__wrapper {
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 290px;
+    padding: 60px 70px;
+  }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 100px;
-    left: 50px;
+    max-width: 404px;
+    padding: 56px 80px;
+    gap: 74px;
+    top: 96px;
+    left: 110px;
     background-color: $white;
   }
+}
+
+.invite__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    min-width: 175px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.invite__adress {
+  line-height: 20px;
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    line-height: 20px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+
 }
 
 .invite__map {
@@ -35,4 +60,8 @@
   border: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
 }

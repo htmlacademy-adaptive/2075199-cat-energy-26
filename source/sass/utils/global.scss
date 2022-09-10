@@ -8,20 +8,40 @@
 .button {
   box-sizing: border-box;
   margin: 0;
-  padding: 8px 44px;
+  padding: 10px 44px;
   border: none;
-  background-color: #68b738;
+  background-color: $basic-green;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $basic-green-2;
+  outline: none;
+}
+
+.button:active {
+  color: rgb(255, 255, 255, 0.3)
 }
 
 .button--show-all {
   background-color: #f2f2f2;
   color: #444444;
+}
+
+.button--show-all:hover,
+.button--show-all:focus {
+  background-color: $spacial-gray-2;
+  outline: none;
+}
+
+.button--show-all:active {
+  color: rgb(0, 0, 0, 0.3);
 }
 
 .image {
@@ -35,31 +55,30 @@
   list-style-type: none;
 }
 
+.title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 .description {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: $special-dark-gray;
-}
+  margin: 0;
 
-label {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.label--input {
-  color: $special-dark-gray;
-}
-
-.label--radio {
-  color: $special-dark-gray-2;
-}
-
-.label-checkbox {
-  color: $black;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .wrapper {
@@ -71,5 +90,20 @@ label {
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
+  }
+}
+
+.input {
+  margin: 0;
+  padding: 12px 16px;
+  font-family: inherit;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
   }
 }

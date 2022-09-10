@@ -1,17 +1,41 @@
 .main-header {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  text-align: center;
+  gap: 90px;
+
+  @media (min-width: $tablet-width) {
+    gap: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
 }
 
-.main-header__logo-cat {
+.main-header__logo {
+  z-index: 1;
+}
+
+.main-header__logo:hover,
+.main-header__logo:focus {
+  opacity: 0.8;
+  outline: none;
+}
+
+.main-header__logo:active {
+  opacity: 0.6;
+}
+
+.main-header__logo-title {
+  margin-left: 52px;
+  margin-bottom: 8px;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.main-header__logo-title {
+.main-header__logo-cat {
   @media (min-width: $tablet-width) {
     min-width: 174px;
     min-height: 52px;
