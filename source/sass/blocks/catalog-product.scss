@@ -1,6 +1,5 @@
 .catalog-product__list {
   display: grid;
-  gap: 44px;
 
   @media (min-width: 700px) {
     grid-template-columns: repeat(2, 1fr);

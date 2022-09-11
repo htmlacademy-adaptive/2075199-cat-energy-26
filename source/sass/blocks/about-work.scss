@@ -1,45 +1,68 @@
 .about-work {
-  .title {
-    font-size: 36px;
-    line-height: 40px;
-    font-weight: 400;
+  margin-top: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 44px;
+    padding-bottom: 54px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 71px;
+  }
+}
+
+.about-work__title {
+  margin: 0;
+  margin-left: 2px;
 }
 
 .about-work__list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  margin-top: 40px;
+  margin-left: 1px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 36px 154px;
-    counter-reset: section;
+    gap: 133px 60px;
+    counter-reset: counter;
+    margin: 0;
+    margin-top: 72px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 36px 96px;
+    gap: 36px 80px;
   }
 }
 
 .about-work__item {
   display: flex;
   gap: 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     width: 230px;
-  }
-
-  &::after {
-    @media (min-width: $tablet-width) {
-      counter-increment: secrion;
-      content: counters(section) "";
-      color: $basic-gray;
-    }
+    counter-increment: section;
   }
 }
+
+.about-work__item::before {
+  @media (min-width: $tablet-width) {
+    content: counter(section);
+    position: absolute;
+    color: $basic-gray;
+    font-size: 280px;
+    line-height: 201px;
+    text-align: center;
+    top: 0;
+    right: -18px;
+    z-index: -1;
+  }
+}
+
 
 .about-work__pin {
   width: 60px;
@@ -61,5 +84,18 @@
 
 .about-work__description {
   margin: 0;
-  vertical-align: middle;
+  margin-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 12px;
+    min-width: 260px;
+  }
+}
+
+.about-work__line-break {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
