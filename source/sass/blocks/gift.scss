@@ -5,16 +5,32 @@
   background-position: center;
   background-size: cover;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .description {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    color: $white;
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.gift__description {
+  margin-top: 47px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 14px;
+    max-width: 161px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
