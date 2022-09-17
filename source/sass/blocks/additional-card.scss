@@ -1,46 +1,83 @@
 .additional-card {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 12px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-gray;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0 244px;
-    padding: 28px 38px;
+    padding-top: 25px;
+    padding-right: 37px;
+    padding-bottom: 28px;
+    padding-left: 37px;
     border: 1px solid $border-gray;
 
     &:not(:first-child) {
+
       border-top: none;
     }
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0 38px;
+    grid-template-columns: 324px 288px 283px;
+    gap: 0;
+    align-items: center;
     padding: 15px 0;
     border-left: none;
     border-right: none;
   }
+}
 
-  .title {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
+.additional-card__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 1px;
 
-  .details {
-    display: flex;
-    justify-content: space-between;
-    font-family: "Arial", sans-serif;
-    font-size: 12px;
-    line-height: 16px;
-    color: $special-dark-gray;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
   }
 }
 
+.additional-card__deteils {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  margin-top: 11px;
+  color: $special-dark-gray;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    gap: 50px;
+    margin-top: 5px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    gap: 0;
+  }
+}
+
+.additional-card__definition {
+  margin: 0;
+}
+
 .additional-card__button {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  margin-top: 14px;
+
+  @media (min-width: $tablet-width) {
     grid-column: 1/-1;
+    margin-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: auto;
+    margin: 0;
+    margin-left: 39px;
   }
 }

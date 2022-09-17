@@ -3,11 +3,13 @@
 
   @media (min-width: 700px) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    gap: 68px 60px;
+    margin-top: 62px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    gap: 65px 78px;
+    margin-top: 85px;
   }
 }

@@ -35,17 +35,17 @@
         </button>
         <ul class="main-nav__list list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--index link" href="index.html">
+            <a class="main-nav__link main-nav__link link" href="index.html">
               <span class="main-nav__current-page  main-nav__current-page main-nav__current-page--index">главная</span>
               </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--index link" href="catalog.html">
+            <a class="main-nav__link main-nav__link link" href="catalog.html">
               <span>каталог продукции</span>
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--index link" href="form.html">
+            <a class="main-nav__link main-nav__link link" href="form.html">
               <span>подбор программы</span>
             </a>
           </li>
@@ -53,8 +53,8 @@
       </nav>
     </header>
     <main class="body__main main-conteiner">
-      <h1 class="main-conteiner__title wrapper main-title">Подбор программы</h1>
-      <p class="main-conteiner__description wrapper main-description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <h1 class="main-conteiner__form-title title">Подбор программы</h1>
+      <p class="main-conteiner__form-description main-description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="main-conteiner__form wrapper form " action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="form__parameters fieldset">
           <legend class="form__parameters-title visually-hidden">Параметры кота</legend>
@@ -78,23 +78,23 @@
           <ul class="form__programmes-type-list list">
             <li class="form__programmes-type-item form__item">
               <label class="form__programmes-type-label">
+                <input class="form__input" type="radio" name="programme-type" value="slim" checked>
                 <span class="form__programmes-radio-mark"></span>
                 <span class="form__label form__label--radio">похудение</span>
-                <input class="form__input" type="radio" name="programme-type" value="slim" checked>
               </label>
             </li>
             <li class="form__programmes-type-item form__item">
               <label class="form__programmes-type-label">
+                <input class="form__input" type="radio" name="programme-type" value="pro">
                 <span class="form__programmes-radio-mark"></span>
                 <span class="form__label form__label--radio">Набор массы</span>
-                <input class="form__input" type="radio" name="programme-type" value="pro">
               </label>
             </li>
             <li class="form__programmes-type-item">
               <label class="form__programmes-type-label form__item">
+                <input class="form__input" type="radio" name="programme-type" value="advice">
                 <span class="form__programmes-radio-mark"></span>
                 <span class="form__label form__label--radio">Не знаю (Нужен ваш совет)</span>
-                <input class="form__input" type="radio" name="programme-type" value="advice">
               </label>
             </li>
           </ul>
@@ -118,39 +118,39 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__comment fieldset comment">
-          <legend class="comment__title title">Комментарий</legend>
-          <textarea class="comment__area form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <fieldset class="form__comment fieldset">
+          <legend class="form__comment-title title">Комментарий</legend>
+          <textarea class="form__comment-area form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__additionally fieldset">
           <legend class="form__additionally-title title">Дополнительно</legend>
           <ul class="form__additionally-list list">
             <li class="form__additionally-item form__item">
               <label class="form__additionally-label">
+                <input class="form__input" type="checkbox" name="sugarfree" checked>
                 <span class="form__checkbox-mark"></span>
                 <span class="form__label form__label--checkbox">сахарозаменитель</span>
-                <input class="form__input" type="checkbox" name="sugarfree" checked>
               </label>
             </li>
             <li class="form__additionally-item">
               <label class="form__additionally-label form__item">
+                <input class="form__input" type="checkbox" name="drink-water">
                 <span class="form__checkbox-mark"></span>
                 <span class="form__label form__label--checkbox">питьевая вода</span>
-                <input class="form__input" type="checkbox" name="drink-water">
               </label>
             </li>
             <li class="form__additionally-item">
               <label class="form__additionally-label form__item">
+                <input class="form__input" type="checkbox" name="milk">
                 <span class="form__checkbox-mark"></span>
                 <span class="form__label form__label--checkbox">молоко</span>
-                <input class="form__input" type="checkbox" name="milk">
               </label>
             </li>
             <li class="form__additionally-item">
               <label class="form__additionally-label form__item">
+                <input class="form__input" type="checkbox" name="vitamins">
                 <span class="form__checkbox-mark"></span>
                 <span class="form__label form__label--checkbox">витамины</span>
-                <input class="form__input" type="checkbox" name="vitamins">
               </label>
             </li>
           </ul>

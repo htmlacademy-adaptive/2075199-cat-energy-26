@@ -9,27 +9,65 @@
 
   .main-description {
     font-size: 14px;
-    line-height: 14px;
+    line-height: 18px;
     font-weight: 400;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 29px;
+    }
   }
 }
 
 .main-conteiner__catalog-title {
-  padding: 0 20px;
-  padding-top: 27px;
-  padding-bottom: 37px;
+  margin-top: 26px;
+  padding-bottom: 38px;
   border-bottom: 1px solid $spacial-gray-2;
-}
-
-.wrapper {
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
+    margin-top: -2px;
     padding: 0 30px;
+    padding-top: 37px;
+    padding-bottom: 30px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 110px 0;
+  }
+}
+
+.main-conteiner__form-title {
+  padding: 0 20px;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 69px;
+    padding-top: 36px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
+    padding-top: 24px;
+  }
+}
+
+.main-conteiner__form-description {
+  margin: 0;
+  margin-top: 36px;
+  padding: 0 20px;
+  padding-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 56px;
+    padding: 0 70px;
+    padding-right: 310px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 56px;
+    padding: 0 110px;
+    padding-right: 1000px;
   }
 }
