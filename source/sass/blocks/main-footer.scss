@@ -28,6 +28,15 @@
   }
 }
 
+.main-footer__logo-link:hover,
+.main-footer__logo-link:focus {
+  opacity: 0.8;
+}
+
+.main-footer__logo-link:active {
+  opacity: 0.6;
+}
+
 .main-footer__social-list {
   display: flex;
   gap: 28px;
@@ -46,6 +55,20 @@
 
 .main-footer__social-item {
   margin-top: 2px;
+}
+
+.main-footer__social-icon-path {
+  fill:  $special-gray-3;
+}
+
+.main-footer__social-link:hover .main-footer__social-icon-path,
+.main-footer__social-link:focus .main-footer__social-icon-path {
+  fill: $basic-green;
+}
+
+.main-footer__social-link:active .main-footer__social-icon-path {
+  fill: $basic-green;
+  opacity: 0.3;
 }
 
 .main-footer__developer {
@@ -68,4 +91,24 @@
 .main-footer__developer-logo {
   min-width: none;
   align-self: center;
+}
+
+.main-footer__developer-logo-path {
+  fill: $special-gray-3;
+}
+
+.main-footer__developer:hover .main-footer__developer-logo-path,
+.main-footer__developer:focus .main-footer__developer-logo-path {
+  fill: $basic-green;
+}
+
+.main-footer__developer:active {
+  .main-footer__developer-name {
+    opacity: 0.3;
+  }
+
+  .main-footer__developer-logo-path {
+    opacity: 0.3;
+    fill: $basic-green;
+  }
 }

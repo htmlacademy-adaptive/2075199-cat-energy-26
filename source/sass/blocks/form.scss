@@ -1,6 +1,6 @@
 .form {
   display: grid;
-  margin-top: 36px;
+  margin-top: 39px;
   padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
@@ -27,10 +27,10 @@
 .form__parameters-list {
   display: flex;
   flex-direction: column;
-  gap: 11px;
+  gap: 13px;
 
   @media (min-width: $tablet-width) {
-    gap: 20px;
+    gap: 23px;
   }
 }
 
@@ -136,10 +136,10 @@
 }
 
 .form__owner-contacts {
+  position: relative;
   grid-column: 1/-1;
   margin-top: 50px;
   border: none;
-  border-top: 1px solid $basic-green;
 
   @media (min-width: $tablet-width) {
     margin-top: 81px;
@@ -150,14 +150,51 @@
   }
 }
 
+.form__owner-contacts-title {
+  @media (min-width: $desktop-width) {
+    max-width: 520px;
+  }
+}
+
+.form__owner-contacts-title::before,
+.form__owner-contacts-title::after {
+  content: "";
+  position: absolute;
+  top: 8%;
+  left: 72%;
+  height: 2px;
+  width: 1000%;
+  background-color: $basic-green;
+}
+
+.form__owner-contacts-title::before {
+  @media (min-width: $tablet-width) {
+    left: 88%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 45%;
+  }
+}
+
+.form__owner-contacts-title::after {
+  @media (min-width: $tablet-width) {
+    left: -1006%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -1003%;
+  }
+}
+
 .form__owner-contacts-list {
   display: flex;
   flex-direction: column;
-  gap: 11px;
-  margin-top: 32px;
+  gap: 14px;
+  margin-top: 34px;
 
   @media (min-width: $tablet-width) {
-    gap: 20px;
+    gap: 24px;
     margin-top: 80px;
   }
 
@@ -183,10 +220,10 @@
 }
 
 .form__comment {
+  position: relative;
   grid-column: 1/-1;
   margin-top: 24px;
   border: none;
-  border-top: 1px solid $basic-green;
 
   @media (min-width: $tablet-width) {
     margin-top: 71px;
@@ -198,7 +235,39 @@
 }
 
 .form__comment-title {
+  max-width: 122px;
   margin-top: 1px;
+}
+
+.form__comment-title::before,
+.form__comment-title::after {
+  content: "";
+  position: absolute;
+  top: 6%;
+  left: 51%;
+  height: 2px;
+  width: 1000%;
+  background-color: $basic-green;
+}
+
+.form__comment-title::before {
+  @media (min-width: $tablet-width) {
+    left: 35%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 18%;
+  }
+}
+
+.form__comment-title::after {
+  @media (min-width: $tablet-width) {
+    left: -1006%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -1003%;
+  }
 }
 
 .form__comment-area {
@@ -215,7 +284,7 @@
   padding: 0;
   padding-top: 5px;
   width: 100%;
-  min-height: 144px;
+  min-height: 150px;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -231,10 +300,10 @@
 }
 
 .form__additionally {
+  position: relative;
   grid-column: 1/-1;
   margin-top: 18px;
   border: none;
-  border-top: 1px solid $basic-green;
 
   @media (min-width: $tablet-width) {
     margin-top: 66px;
@@ -242,6 +311,41 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -13px;
+  }
+}
+
+.form__additionally-title::before,
+.form__additionally-title::after {
+  content: "";
+  position: absolute;
+  top: 7%;
+  left: 58%;
+  height: 2px;
+  width: 1000%;
+  background-color: $basic-green;
+}
+
+.form__additionally-title::before {
+  @media (min-width: $tablet-width) {
+    top: 9%;
+    left: 40%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 16%;
+    left: 21%;
+  }
+}
+
+.form__additionally-title::after {
+  @media (min-width: $tablet-width) {
+    top: 9%;
+    left: -1006%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 16%;
+    left: -1003%;
   }
 }
 
@@ -347,4 +451,13 @@
   .input {
     flex-grow: 1;
   }
+}
+
+.form__input-set:hover .input {
+  border: 1px solid $special-gray;
+}
+
+.form__input-set:focus .input {
+  border: 1px solid $special-dark-gray;
+  outline: 1px solid $special-dark-gray;
 }
