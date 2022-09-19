@@ -115,6 +115,7 @@
   font-family: inherit;
   text-transform: uppercase;
   appearance: none;
+  border: 1px solid $border-gray;
 
   @media (min-width: $tablet-width) {
     padding: 14px 18px;
