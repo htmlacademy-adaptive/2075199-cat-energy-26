@@ -1,24 +1,27 @@
 .programmes {
-  position: relative;
   display: flex;
   flex-direction: column;
-  background-color: $white;
-  background-image: url("../img/bg-cover.png"), url("../img/bg-cat-greeting.jpg"), url("../img/bg-cover.png");
-  background-repeat: no-repeat;
-  background-size: 320px 302px;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    background: none;
-    text-align: start;
-  }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/bg-cover.png"), url("../img/programmes/bg-cat-greeting-desktop.jpg");
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 720px 697px;
+    background-size: 50% 695px;
     margin-top: -164px;
+  }
+}
+
+.programmes__wrapper {
+  min-height: 303px;
+  text-align: center;
+  background-color: $white;
+  background-image: url("../img/bg-cover.png"), url("../img/programmes/bg-cat-greeting.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    text-align: start;
   }
 }
 
@@ -68,16 +71,17 @@
 }
 
 .programmes__picture {
-  padding-top: 26px;
+  margin-top: -134px;
+  margin-left: 6px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -60px;
+    margin-top: -70px;
     margin-left: 28px;
     order: 4;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -144px;
+    margin-top: -118px;
     margin-left: 0;
   }
 }
@@ -124,6 +128,8 @@
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
+    position: relative;
+    top: -37px;
     margin: 0;
     padding: 17px;
     font-size: 20px;
@@ -136,5 +142,6 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 190px;
+    top: 0;
   }
 }
