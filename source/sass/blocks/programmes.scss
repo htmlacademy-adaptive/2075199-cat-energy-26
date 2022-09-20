@@ -8,6 +8,10 @@
     background-position: top right;
     background-size: 50% 695px;
     margin-top: -164px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-cover.png"), url("../img/programmes/bg-cat-greeting-desktop@2x.jpg");
+    }
   }
 }
 
@@ -18,6 +22,10 @@
   background-image: url("../img/bg-cover.png"), url("../img/programmes/bg-cat-greeting.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-cover.png"), url("../img/programmes/bg-cat-greeting@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     background: none;

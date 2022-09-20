@@ -1,7 +1,6 @@
 .main-header {
   display: flex;
   flex-wrap: wrap;
-  gap: 90px;
 
   @media (min-width: $tablet-width) {
     gap: 93px;
@@ -45,4 +44,7 @@
     min-width: 202px;
     min-height: 60px;
   }
+}
+.main-header__main-nav {
+  margin-left: auto;
 }
