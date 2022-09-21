@@ -133,6 +133,8 @@
 
 .programmes__button {
   margin: 0 20px;
+  text-align: center;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
