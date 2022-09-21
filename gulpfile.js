@@ -24,7 +24,7 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -66,7 +66,7 @@ const createWebP = () => {
 // SVG
 
 const optSvg = () => {
-  return gulp.src('source/img/*.svg')
+  return gulp.src('source/img/**/*.svg')
     .pipe(svgo())
     .pipe(gulp.dest('build/img'))
  }
@@ -87,6 +87,7 @@ const optSvg = () => {
    gulp.src([
      'source/fonts/*.{woff2,woff}',
      'source/*.ico',
+     'source/img/logotypes/*.svg',
    ], {
      base: 'source'
    })
