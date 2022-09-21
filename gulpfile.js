@@ -12,7 +12,7 @@ import htmlmin from 'gulp-htmlmin';
 import svgstore from 'gulp-svgstore';
 import svgo from 'gulp-svgo';
 import rename from 'gulp-rename';
-
+import del from 'del';
 
 // Styles
 
@@ -83,10 +83,10 @@ const optSvg = () => {
 
  // Copy
 
- const copy = (done) => {
+ export const copy = (done) => {
    gulp.src([
      'source/fonts/*.{woff2,woff}',
-     'source/*.ico,'
+     'source/*.ico',
    ], {
      base: 'source'
    })
@@ -95,6 +95,10 @@ const optSvg = () => {
  }
 
  // Clean
+
+const clean = () => {
+  return del('build')
+}
 
 // Server
 
@@ -120,6 +124,7 @@ const watcher = () => {
 // Build
 
 export const build = gulp.series(
+  clean,
   copy,
   images,
   gulp.parallel (
@@ -133,5 +138,6 @@ export const build = gulp.series(
 )
 
 export default gulp.series(
-  copy, html, styles, server, watcher
+  build, server, watcher
 );
+
