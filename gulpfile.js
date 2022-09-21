@@ -69,21 +69,21 @@ const optSvg = () => {
   return gulp.src('source/img/**/*.svg')
     .pipe(svgo())
     .pipe(gulp.dest('build/img'))
- }
+}
 
 // Sprite
 
- const sprite = () => {
+const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
     .pipe(svgo())
     .pipe(svgstore())
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'))
- }
+}
 
  // Copy
 
- export const copy = (done) => {
+export const copy = (done) => {
    gulp.src([
      'source/fonts/*.{woff2,woff}',
      'source/*.ico',
@@ -93,7 +93,7 @@ const optSvg = () => {
    })
    .pipe(gulp.dest('build'))
   done();
- }
+}
 
  // Clean
 
@@ -141,4 +141,3 @@ export const build = gulp.series(
 export default gulp.series(
   build, server, watcher
 );
-
