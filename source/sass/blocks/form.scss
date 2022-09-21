@@ -75,11 +75,8 @@
 }
 
 .form__item:hover .form__programmes-radio-mark,
-.form__item:focus .form__programmes-radio-mark,
-.form__item:hover .form__checkbox-mark,
-.form__item:focus .form__checkbox-mark {
+.form__item:focus .form__programmes-radio-mark {
   border-color: #bababa;
-  outline: none;
 }
 
 .form__item:active {
@@ -398,6 +395,11 @@
   @media (min-width: $tablet-width) {
     background-size: 18px;
   }
+}
+
+.form__additionally-item:hover .form__checkbox-mark,
+.form__input[type="checkbox"]:focus + .form__checkbox-mark {
+  border-color: #bababa;
 }
 
 .form__button {

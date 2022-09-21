@@ -5,6 +5,10 @@
   background-position: center;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-cover.png"), url("../img/bg-cat-gift@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;

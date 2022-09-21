@@ -12,7 +12,7 @@ import htmlmin from 'gulp-htmlmin';
 import svgstore from 'gulp-svgstore';
 import svgo from 'gulp-svgo';
 import rename from 'gulp-rename';
-
+import del from 'del';
 
 // Styles
 
@@ -66,35 +66,40 @@ const createWebP = () => {
 // SVG
 
 const optSvg = () => {
-  return gulp.src('source/img/*.svg')
+  return gulp.src('source/img/**/*.svg')
     .pipe(svgo())
     .pipe(gulp.dest('build/img'))
- }
+}
 
 // Sprite
 
- const sprite = () => {
+const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
     .pipe(svgo())
     .pipe(svgstore())
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'))
- }
+}
 
  // Copy
 
- const copy = (done) => {
+export const copy = (done) => {
    gulp.src([
      'source/fonts/*.{woff2,woff}',
-     'source/*.ico,'
+     'source/*.ico',
+     'source/img/logotypes/*.svg',
    ], {
      base: 'source'
    })
    .pipe(gulp.dest('build'))
   done();
- }
+}
 
  // Clean
+
+const clean = () => {
+  return del('build')
+}
 
 // Server
 
@@ -120,6 +125,7 @@ const watcher = () => {
 // Build
 
 export const build = gulp.series(
+  clean,
   copy,
   images,
   gulp.parallel (
@@ -133,5 +139,5 @@ export const build = gulp.series(
 )
 
 export default gulp.series(
-  copy, html, styles, server, watcher
+  build, server, watcher
 );

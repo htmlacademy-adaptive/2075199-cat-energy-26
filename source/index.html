@@ -6,7 +6,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link href="./css/style.css" rel="stylesheet">
     <link rel="icon" href="../favicon.ico">
-    <link rel="icon" href="./img/favicon/icon .svg" type="image/svg+xml">
+    <link rel="icon" href="./img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-toch-icon" href="./img/favicon/apple-icon.png">
     <link rel="manifest" href="/manifest.webmanifest">
   </head>
@@ -46,8 +46,10 @@
     <main class="body__main main-conteiner">
       <h1 class="visually-hidden">Магазин функцианального питания для котов</h1>
       <section class="main-conteiner__programmes  programmes">
-        <h2 class="programmes__title title">Функциональное питание для котов</h2>
-        <p class="programmes__description description">Занялся собой? Займись котом!</p>
+        <div class="programmes__wrapper">
+          <h2 class="programmes__title title">Функциональное питание для котов</h2>
+          <p class="programmes__description description">Занялся собой? Займись котом!</p>
+        </div>
         <div class="programmes__picture">
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/programmes/index-can.webp 1x, img/programmes/index-can@2x.webp 2x">
@@ -58,7 +60,7 @@
             <img class="programmes__image" src="img/programmes/index-can-mobile.png" srcset="img/programmes/index-can-mobile@2x.png 2x" width="280" height="270" alt="cat energy pro с курицей.">
           </picture>
         </div>
-        <button class="programmes__button button" type="button">подобрать программу</button>
+        <a class="programmes__button button" href="form.html">подобрать программу</a>
         <ul class="programmes__features-list fetures-list list wrapper">
           <li class="fetures-list__item feature-item">
             <h3 class="feature-item__title title">похудение</h3>
